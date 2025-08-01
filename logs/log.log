@@ -1,0 +1,6 @@
+[INFO ] 25-08-01 17:44:51 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 35208 (D:\megastudy\mcdonald\build\classes\java\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-01 17:44:51 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-01 17:44:51 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-01 17:44:52 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-01 17:44:52 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-01 17:44:54 [McdonaldApplication:59] - Started McdonaldApplication in 2.885 seconds (process running for 3.507)
