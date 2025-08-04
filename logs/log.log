@@ -210,3 +210,46 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 [WARN ] 25-08-04 14:41:59 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
 [INFO ] 25-08-04 14:42:01 [McdonaldApplication:59] - Started McdonaldApplication in 3.036 seconds (process running for 3.553)
 [WARN ] 25-08-04 14:42:03 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-08-04 15:19:15 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 16220 (D:\megastudy\mcdonald\bin\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-04 15:19:15 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-04 15:19:15 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-04 15:19:16 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-04 15:19:16 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-04 15:19:18 [McdonaldApplication:59] - Started McdonaldApplication in 3.094 seconds (process running for 3.603)
+[WARN ] 25-08-04 15:19:24 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-08-04 15:20:34 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 19172 (D:\megastudy\mcdonald\bin\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-04 15:20:34 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-04 15:20:34 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-04 15:20:35 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-04 15:20:35 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-04 15:20:37 [McdonaldApplication:59] - Started McdonaldApplication in 3.219 seconds (process running for 3.724)
+[WARN ] 25-08-04 15:20:41 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[WARN ] 25-08-04 15:20:42 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-6][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-08-04 15:21:39 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 19732 (D:\megastudy\mcdonald\bin\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-04 15:21:39 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-04 15:21:39 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-04 15:21:40 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-04 15:21:40 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-04 15:21:42 [McdonaldApplication:59] - Started McdonaldApplication in 3.216 seconds (process running for 3.752)
+[WARN ] 25-08-04 15:21:50 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-08-04 15:22:20 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 7636 (D:\megastudy\mcdonald\bin\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-04 15:22:20 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-04 15:22:20 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-04 15:22:20 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-04 15:22:20 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-04 15:22:22 [McdonaldApplication:59] - Started McdonaldApplication in 3.306 seconds (process running for 3.827)
+[WARN ] 25-08-04 15:22:28 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-08-04 15:22:52 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 3776 (D:\megastudy\mcdonald\bin\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-04 15:22:52 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-04 15:22:52 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-04 15:22:53 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-04 15:22:53 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-04 15:22:54 [McdonaldApplication:59] - Started McdonaldApplication in 3.062 seconds (process running for 3.564)
+[WARN ] 25-08-04 15:22:57 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+[INFO ] 25-08-04 15:23:16 [McdonaldApplication:53] - Starting McdonaldApplication using Java 21.0.2 with PID 5104 (D:\megastudy\mcdonald\bin\main started by goguma in D:\megastudy\mcdonald)
+[DEBUG] 25-08-04 15:23:16 [McdonaldApplication:54] - Running with Spring Boot v3.4.8, Spring v6.2.9
+[INFO ] 25-08-04 15:23:16 [McdonaldApplication:652] - No active profile set, falling back to 1 default profile: "default"
+[DEBUG] 25-08-04 15:23:17 [LogFactory:112] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[WARN ] 25-08-04 15:23:17 [ClassPathMapperScanner:44] - No MyBatis mapper was found in '[kr.goguma.mcdonald]' package. Please check your configuration.
+[INFO ] 25-08-04 15:23:19 [McdonaldApplication:59] - Started McdonaldApplication in 3.281 seconds (process running for 3.806)
+[WARN ] 25-08-04 15:23:22 [AbstractStandardFragmentInsertionTagProcessor:385] - [THYMELEAF][http-nio-8080-exec-1][main] Deprecated unwrapped fragment expression "fragments/header :: header" found in template main, line 10, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/header :: header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
