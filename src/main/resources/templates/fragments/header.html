@@ -14,9 +14,24 @@
                     <img th:src="@{/images/imgi_1_logo.png}" alt="맥도날드 로고" />
                 </a>
             </div>
-
-
-
+            <div class="menu-items">
+                <ul>
+                    <li><a th:href="@{/menu}">Menu</a></li>
+                    <li><a th:href="@{/order}">Store</a></li>
+                    <li><a th:href="@{/contact}">What's New</a></li>
+                    <li><a th:href="@{/story}">Story</a></li>
+                </ul>
+                <div class="buttons">
+                    <button class="inquiry">임차문의</button>
+                    <button class="recruit">RECRUIT</button>
+                    <button class="eng">ENG</button>
+                </div>
+                <div class="search-bar">
+                    <a href="#" class="search-icon">
+                        <img th:src="@{/images/imgi_22_ico_search.png}" alt="검색 아이콘" />
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

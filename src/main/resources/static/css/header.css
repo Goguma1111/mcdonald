@@ -1,0 +1,36 @@
+.menu-bar {
+    background-color: #ffffff;
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* 두 블록(로고+메뉴) 전체를 가운데 */
+    align-items: center;
+    gap: 100px; /* 로고와 메뉴 사이 간격 */
+    height: 120px; /* 높이 설정 */
+
+
+}
+
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-items ul {
+    display: flex;
+    gap: 100px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 40px; /* Story와 버튼 사이 간격 */
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
