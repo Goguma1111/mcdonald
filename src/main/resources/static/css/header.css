@@ -26,6 +26,14 @@
     margin-right: 40px; /* Story와 버튼 사이 간격 */
 }
 
+.menu-items a {
+    text-decoration: none;
+    color: #000000; /* 메뉴 링크 색상 */
+    font-weight: bold; /* 메뉴 글씨 두껍게 */
+    font-size: 20px; /* 메뉴 글씨 크기 */
+}
+
+
 .buttons {
     display: flex;
     gap: 5px;
@@ -34,4 +42,8 @@
 .search-bar {
     display: flex;
     align-items: center;
+}
+
+.menu-items li:visited{
+    color: #000000; /* 방문한 메뉴 링크 색상 */
 }
