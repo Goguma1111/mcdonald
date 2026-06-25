@@ -1,120 +1,171 @@
+/* 기본 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
-    font-family: SpeedeeK, Malgun Gothic,'맑은 고딕', Dotum,'돋움', Arial, sans-serif
+    font-family: 'Noto Sans KR', sans-serif;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
 }
 
+/* 전체 네비게이션 컨테이너 (이 영역에 마우스 올리면 메뉴 전체가 열림) */
+.navigation-container {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #eee;
+}
+
+/* 상단 메인 바 */
 .menu-bar {
-    background-color: #ffffff;
-    padding: 10px;
     display: flex;
-    justify-content: center; /* 두 블록(로고+메뉴) 전체를 가운데 */
     align-items: center;
-    gap: 50px; /* 로고와 메뉴 사이 간격 */
-    height: 120px; /* 높이 설정 */
-
-
+    justify-content: space-between;
+    padding: 0 50px;
+    height: 120px;
+    background-color: #fff;
+    position: relative;
+    z-index: 102; /* 하위 메뉴판보다 위에 오도록 */
 }
 
+/* 로고 */
+.logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+/* 메인 메뉴 정렬 */
 .menu-items {
     display: flex;
     align-items: center;
-    gap: 37px;
-    margin-left: 40px; /* 로고와 메뉴 사이 간격 */
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-left: 80px;
+    height: 100%;
 }
 
-.menu-items ul {
+.main-menu {
     display: flex;
-    gap: 100px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-right: 40px; /* Story와 버튼 사이 간격 */
+    height: 100%;
+
 }
 
-.menu-items a {
-    text-decoration: none;
-    color: #000000; /* 메뉴 링크 색상 */
-    font-weight: bold; /* 메뉴 글씨 두껍게 */
-    font-size: 24px; /* 메뉴 글씨 크기 */
+.main-menu li {
+    display: flex;
+    align-items: center;
 }
 
-.menu-items .buttons a {
-    color: #2D2D2D; /* 버튼 링크 색상 */
-    font-size: 14px;
+.main-menu li:hover {
+    background-color: #ffbc0d; /* 마우스 올리면 맥도날드 시그니처 옐로우 */
+}
+
+.menu-title {
+    font-size: 22px;
     font-weight: bold;
-    text-decoration: none;
+    padding: 0 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #333;
 }
 
-
+/* 우측 버튼 영역 */
 .buttons {
     display: flex;
-    gap: 20px;
-
-}
-
-.inquiry {
-    display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 15px;
 }
-
-.inquiry img {
-    width: 16px; /* 아이콘 크기 조절 */
-    height: 16px;
-    margin-right: 5px; /* 아이콘과 텍스트 사이 간격 */
-}
-
-.inquiry a {
-    text-decoration: none; /* 밑줄 제거 */
-    font-size: 13px !important; /* 우선 적용 */
-    padding: 5px 10px; /* 버튼 안쪽 여백 */
-    text-align: center; /* 글씨 가운데 정렬 */
-    font-weight: bold; /* 글씨 두껍게 */
-}
-
-.recruit {
-    display: flex;
+.buttons a {
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-  
+    font-size: 14px;
+    color: #333;
+    gap: 5px;
+}
+.buttons a img {
+    width: 18px;
+    height: 18px;
+}
+.buttons .eng {
+    background-color: #ffbc0d;
+    color: #fff;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
 }
 
-.recruit img {
-    width: 16px; /* 아이콘 크기 조절 */
-    height: 16px;
-    margin-right: 5px; /* 아이콘과 텍스트 사이 간격 */
-}
-
-.recruit a {
-
-    text-decoration: none; /* 밑줄 제거 */
-    font-size: 13px !important; /* 우선 적용 */
-    padding: 5px 10px; /* 버튼 안쪽 여백 */
-    text-align: center; /* 글씨 가운데 정렬 */
-    font-weight: bold; /* 글씨 두껍게 */
-}
-
-
-.eng {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffbc0d; /* 버튼 배경색 */
-    border-radius: 100px; /* 버튼 모서리 둥글게 */
-    width: 40px;
-    height: 40px;
-    font-size: 14px !important;
-}
-
-.menu-items li:visited{
-    color: #000000; /* 방문한 메뉴 링크 색상 */
-}
-
-.header-bottom-line {
+/* ----------------------------------
+   ⭐️ 핵심: 전체 펼쳐지는 메가 드롭다운
+---------------------------------- */
+.mega-dropdown {
+    position: absolute;
+    top: 120px; /* menu-bar 바로 밑에 위치 */
+    left: 0;
     width: 100%;
-    height: 0.2px;
-    box-shadow: 0px 0px 1px #000000;
-    margin: 0;
-    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 15px 20px rgba(0,0,0,0.05);
+    border-top: 1px solid #f5f5f5;
+    
+    /* 처음에는 숨겨두고 부드럽게 열리는 효과 적용 */
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.2s ease;
+    z-index: 101;
 }
 
+/* 컨테이너 전체에 마우스 호버 시 -> 모든 하위 메뉴 동시에 펼침 */
+.navigation-container:hover .mega-dropdown {
+    max-height: 400px; /* 메뉴가 다 펼쳐질 만큼의 넉넉한 높이 */
+    opacity: 1;
+}
 
+/* 상단 1차 메뉴와 세로 라인을 맞추기 위한 내부 그리드 레이아웃 */
+.mega-dropdown-inner {
+    display: flex;
+    padding: 30px 50px 40px 50px; /* 좌우 패딩은 상단 menu-bar와 동일하게 */
+}
+
+/* 로고 위치만큼 왼쪽 여백 확보 */
+.mega-dropdown-inner::before {
+    content: '';
+    width: 150px; /* 로고가 차지하는 대략적인 너비 + margin */
+    flex-shrink: 0;
+}
+
+/* 각 하위 메뉴 열 (세로 정렬) */
+.sub-menu-col {
+    /* 상단 .menu-title의 패딩 및 너비와 균형을 맞추기 위한 설정 */
+    width: 160px; 
+    margin-right: 20px;
+    text-align: center;
+}
+
+/* 오른쪽 버튼 배치 공간 확보용 빈 박스 */
+.sub-menu-col-empty {
+    flex-grow: 1;
+}
+
+/* 하위 메뉴 링크 스타일 */
+.sub-menu-col ul li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.2s;
+}
+
+.sub-menu-col ul li a:hover {
+    color: #ffbc0d; /* 마우스 올리면 맥도날드 시그니처 옐로우 */
+    font-weight: bold;
+}

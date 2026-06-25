@@ -2,33 +2,79 @@
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>맥도날드</title>
-    <link rel="stylesheet" th:href="@{/css/header.css}" />
 </head>
 <body>
-    <div th:fragment="header">
+
+    <div th:fragment="header" class="navigation-container">
         <div class="menu-bar">
+            
             <div class="logo">
                 <a th:href="@{/main}">
                     <img th:src="@{/images/imgi_1_logo.png}" alt="맥도날드 로고" />
                 </a>
             </div>
+            
             <div class="menu-items">
-                <ul>
-                    <li><a th:href="@{/menu}">Menu</a></li>
-                    <li><a th:href="@{/order}">Store</a></li>
-                    <li><a th:href="@{/contact}">What's New</a></li>
-                    <li><a th:href="@{/story}">Story</a></li>
+                <ul class="main-menu">
+                    <li><a th:href="@{/menu}" class="menu-title">Menu</a></li>
+                    <li><a th:href="@{/order}" class="menu-title">Store</a></li>
+                    <li><a th:href="@{/contact}" class="menu-title">What's New</a></li>
+                    <li><a th:href="@{/story}" class="menu-title">Story</a></li>
                 </ul>
+
                 <div class="buttons">
-                    <a class="inquiry" href="#"><img th:src="@{/images/inquiry.png}" alt="임차문의" />임차문의</a>
                     <a class="recruit" href="#"><img th:src="@{/images/recruit.png}" alt="인재채용" />인재채용</a>
+                    <a class="inquiry" href="#"><img th:src="@{/images/inquiry.png}" alt="임차문의" />임차문의</a>
                     <a class="eng" href="#">EN</a>
                 </div>
             </div>
+            
         </div>
-        <div class="header-bottom-line"></div>
+
+        <div class="mega-dropdown">
+            <div class="mega-dropdown-inner">
+                <div class="sub-menu-col">
+                    <ul>
+                        <li><a href="#">버거</a></li>
+                        <li><a href="#">맥런치</a></li>
+                        <li><a href="#">맥모닝</a></li>
+                        <li><a href="#">해피 스낵</a></li>
+                        <li><a href="#">사이드&디저트</a></li>
+                        <li><a href="#">맥카페&음료</a></li>
+                        <li><a href="#">해피밀</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sub-menu-col">
+                    <ul>
+                        <li><a href="#">매장찾기</a></li>
+                        <li><a href="#">맥딜리버리</a></li>
+                    </ul>
+                </div>
+
+                <div class="sub-menu-col">
+                    <ul>
+                        <li><a href="#">프로모션 소식</a></li>
+                        <li><a href="#">보도자료</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이달의 해피밀</a></li>
+                    </ul>
+                </div>
+
+                <div class="sub-menu-col">
+                    <ul>
+                        <li><a href="#">맥도날드 브랜드 철학</a></li>
+                        <li><a href="#">더 건강한 지구를 위한 약속</a></li>
+                        <li><a href="#">이웃과 함께, 지역과 함께</a></li>
+                        <li><a href="#">더 좋은 재료, 더 좋은 맛</a></li>
+                        <li><a href="#">맥도날드의 사람들</a></li>
+                    </ul>
+                </div>
+                
+                <div class="sub-menu-col-empty"></div>
+            </div>
+        </div>
     </div>
+
 </body>
 </html>
